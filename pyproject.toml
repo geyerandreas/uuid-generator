@@ -1,0 +1,16 @@
+[project]
+name = "uuid-generator"
+version = "0.1.0"
+description = "A simple UUID generator"
+readme = "README.md"
+authors = [{ name = "Andreas Geyer", email = "andreas@qbitone.de" }]
+requires-python = ">=3.13"
+dependencies = ["fastapi[standard]>=0.115.14"]
+
+[build-system]
+requires = ["uv_build>=0.7.19,<0.8"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "app"
+module-root = ""
